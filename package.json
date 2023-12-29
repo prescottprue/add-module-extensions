@@ -1,0 +1,34 @@
+{
+  "name": "jscodeshift-module-extensions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "yarn tsc",
+    "lint": "eslint . --ignore-pattern='!.eslintrc.js' --ext .ts,.js --max-warnings 0",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "author": "prescottprue",
+  "license": "MIT",
+  "dependencies": {
+    "jscodeshift-imports": "^1.1.0"
+  },
+  "devDependencies": {
+    "@tsconfig/node20": "20.1.2",
+    "@types/eslint": "^8",
+    "@types/jscodeshift": "^0",
+    "@types/node": "20.10.5",
+    "@typescript-eslint/eslint-plugin": "^6.16.0",
+    "@typescript-eslint/parser": "^6.16.0",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "prettier": "^3.1.1",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3"
+  },
+  "peerDependencies": {
+    "jscodeshift": "^0.15.1"
+  },
+  "packageManager": "yarn@4.0.2"
+}
