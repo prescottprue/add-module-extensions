@@ -1,0 +1,21 @@
+{
+  "ts-node": {
+    "files": true
+  },
+  "extends": "@tsconfig/node20/tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "sourceMap": true,
+    "esModuleInterop": true, // needed for config module
+    "noImplicitAny": true,
+    "resolveJsonModule": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "strictPropertyInitialization": false,
+    "useDefineForClassFields": false,
+    "allowJs": true
+  },
+  "exclude": ["node_modules"],
+  "include": ["src"]
+}
