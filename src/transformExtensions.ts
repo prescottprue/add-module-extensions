@@ -39,6 +39,7 @@ const TransformModuleExtensions: Transform = (fileInfo, { jscodeshift: j }) => {
         !importPath.startsWith('node:') && // Not node built in (with prefix)
         !nodeBuildIns.includes(importPath) && // Not node built in (without prefix)
         !importPath.endsWith('.js') && // Not already a transformed path
+        !importPath.endsWith('.json') && // Not already a JSON path
         !dependencies.some((dep) => dep === importPath)
       ); // Not a dep or dev dep
     })
